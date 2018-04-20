@@ -46,3 +46,9 @@ F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\Swashbuckle.Core.dll
 F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\WebActivatorEx.dll
 F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\homeApi.XML
 F:\myGit\C#$javascriptProjects\homeApi\homeApi\obj\Debug\homeApi.csprojResolveAssemblyReference.cache
+F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\service.dll
+F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\SqlServer.dll
+F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\service.pdb
+F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\SqlServer.pdb
+F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\Model.dll
+F:\myGit\C#$javascriptProjects\homeApi\homeApi\bin\Model.pdb

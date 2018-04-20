@@ -1,0 +1,7 @@
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\bin\Debug\SqlServer.dll
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\bin\Debug\SqlServer.pdb
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\obj\Debug\SqlServer.dll
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\obj\Debug\SqlServer.pdb
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\bin\Debug\Model.dll
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\bin\Debug\Model.pdb
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\obj\Debug\SqlServer.csprojResolveAssemblyReference.cache

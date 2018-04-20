@@ -36,3 +36,7 @@ F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\obj\Debug\homeApi.Tests.csp
 F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\obj\Debug\homeApi.Tests.dll
 F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\obj\Debug\homeApi.Tests.pdb
 F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\homeApi.xml
+F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\service.dll
+F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\SqlServer.dll
+F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\service.pdb
+F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\SqlServer.pdb
