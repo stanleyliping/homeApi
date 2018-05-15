@@ -15,7 +15,7 @@ namespace Model
         public string Email { set; get; }
         public string Gender { set; get; }
         public string Status { set; get; }
-        public string Authority { set; get; }
+        public string wechatId { set; get; }
         public string CreateTime { set; get; }
         public string UpdateTime { set; get; }
     }

@@ -4,5 +4,17 @@
         <name>homeApi</name>
     </assembly>
     <members>
+        <member name="M:homeApi.Controllers.userInfoController.getAllUserInfo">
+            <summary>
+            获取全部用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:homeApi.Controllers.userInfoController.getUserInfoByUserName(System.String)">
+             <summary>
+            通过用户姓名获取用户信息
+             </summary>
+             <returns></returns>
+        </member>
     </members>
 </doc>
