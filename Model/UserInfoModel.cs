@@ -13,8 +13,8 @@ namespace Model
         public string Password { set; get; }
         public string MobileNum { set; get; }
         public string Email { set; get; }
-        public string Gender { set; get; }
-        public string Status { set; get; }
+        public string Gender { set; get; }//1-男，2-女
+        public string Status { set; get; }//1-激活，2-禁用
         public string wechatId { set; get; }
         public string CreateTime { set; get; }
         public string UpdateTime { set; get; }

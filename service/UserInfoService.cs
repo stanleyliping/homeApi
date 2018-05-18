@@ -27,7 +27,7 @@ namespace service
         /// <returns></returns>
         public UserInfoModel getUserInfoByUserName(string userName)
         {
-            HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");//处理跨域问题
+            //HttpContext.Current.Response.AddHeader("Access-Control-Allow-Origin", "*");//处理跨域问题
             UserInfoSql userinfosql = new UserInfoSql();
             return userinfosql.getUserInfoDataByUserName(userName);
         }
