@@ -9,8 +9,14 @@ using System.Xml.XPath;
 
 namespace homeApi
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SwaggerConfig
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
@@ -254,7 +260,10 @@ namespace homeApi
                         //c.EnableApiKeySupport("apiKey", "header");
                     });
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         protected static string GetXmlCommentsPath()
         {
             var re = System.String.Format(@"{0}\bin\homeApi.XML", System.AppDomain.CurrentDomain.BaseDirectory);

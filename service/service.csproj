@@ -41,11 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="emailService.cs" />
+    <Compile Include="DAO\UserDaoService.cs" />
+    <Compile Include="ExpressInfoService.cs" />
+    <Compile Include="FunctionListService.cs" />
+    <Compile Include="Functions\EmailService.cs" />
+    <Compile Include="UserFunctionRelationService.cs" />
     <Compile Include="UserInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseTools\BaseTools.csproj">
+      <Project>{352054F2-62C0-420D-A417-0BCB6F5EF448}</Project>
+      <Name>BaseTools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{25699903-1317-4151-b427-7a04981eb697}</Project>
       <Name>Model</Name>
@@ -55,6 +63,7 @@
       <Name>sqlServer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

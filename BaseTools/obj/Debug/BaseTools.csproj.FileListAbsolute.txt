@@ -1,0 +1,4 @@
+D:\web_deployment\home\homeApi\BaseTools\bin\Debug\BaseTools.dll
+D:\web_deployment\home\homeApi\BaseTools\bin\Debug\BaseTools.pdb
+D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.dll
+D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.pdb

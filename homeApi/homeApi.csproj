@@ -132,7 +132,10 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Dao\UserDaoController.cs" />
     <Compile Include="Controllers\emailController.cs" />
+    <Compile Include="Controllers\ExpressInfoController.cs" />
+    <Compile Include="Controllers\FunctionListController.cs" />
     <Compile Include="Controllers\userInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

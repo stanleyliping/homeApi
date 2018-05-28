@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseTools;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -46,6 +47,7 @@ namespace service
                 return true;
             }
             catch (Exception ex) {
+                WriteLog.WriteError(ex.ToString());
                 return false;
             }
            

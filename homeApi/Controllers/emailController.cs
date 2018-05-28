@@ -8,9 +8,18 @@ using System.Web.Http;
 
 namespace homeApi.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class emailController : ApiController
     {
-
+        /// <summary>
+        /// 发送邮件
+        /// </summary>
+        /// <param name="emailAddress">收件人地址</param>
+        /// <param name="title">标题</param>
+        /// <param name="text">正文</param>
+        /// <returns></returns>
         [HttpGet]
         [Route("homeApi/email/sendMailToUser")]
         [ActionName("sendMailToUser")]
@@ -24,27 +33,6 @@ namespace homeApi.Controllers
             else {
                 return "发送失败！";
             }
-        }
-
-        // GET: api/email/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/email
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/email/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/email/5
-        public void Delete(int id)
-        {
         }
     }
 }

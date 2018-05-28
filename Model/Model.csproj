@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpressInfoModel.cs" />
+    <Compile Include="ExpressOperateLogModel.cs" />
+    <Compile Include="FunctionListModel.cs" />
+    <Compile Include="UserFunctionRelationModel.cs" />
     <Compile Include="UserInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

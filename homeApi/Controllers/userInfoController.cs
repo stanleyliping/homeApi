@@ -9,6 +9,9 @@ using Model;
 
 namespace homeApi.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class userInfoController : ApiController
     {
         /// <summary>
@@ -26,11 +29,12 @@ namespace homeApi.Controllers
             return list;
         }
         /// <summary>
-        ///通过用户姓名获取用户信息
+        /// 通过用户姓名获取用户信息
         /// </summary>
+        /// <param name="userName">用户名</param>
         /// <returns></returns>
         [HttpGet]
-        [Route("homeApi/userInfo/getUserInfoByName")]
+        [Route("homeApi/userInfo/getUserInfoByName/{userName}")]
         [ActionName("getUserInfoByName")]
         public UserInfoModel getUserInfoByUserName(string userName)
         {
@@ -39,23 +43,29 @@ namespace homeApi.Controllers
             userInfo = service.getUserInfoByUserName(userName);
             return userInfo;
         }
-        // GET api/<controller>/5
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<controller>
+
+        /// <summary>
+        /// post方法
+        /// </summary>
+        /// <param name="value"></param>
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/<controller>/5
+        /// <summary>
+        /// Put方法
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="value"></param>
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/<controller>/5
+       /// <summary>
+       /// delete方法
+       /// </summary>
+       /// <param name="id"></param>
         public void Delete(int id)
         {
         }

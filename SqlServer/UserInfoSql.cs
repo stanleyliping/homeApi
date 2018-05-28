@@ -6,13 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Model;
 using System.Data.SqlClient;
+using BaseTools;
 
 namespace SqlServer
 {
 
     public class UserInfoSql
     {
-        ConnectionStringSettingsCollection sss = ConfigurationManager.ConnectionStrings;
+        //ConnectionStringSettingsCollection sss = ConfigurationManager.ConnectionStrings;
         string connstr = ConfigurationManager.ConnectionStrings["SqlServerConnectionString"].ToString();
 
         /// <summary>
@@ -33,26 +34,28 @@ namespace SqlServer
                 while (dr.Read())
                 {
                     UserInfoModel item = new UserInfoModel();
-                    item.UserId = dr[0].ToString();
-                    item.Name = dr[1].ToString();
-                    item.Password = dr[2].ToString();
-                    item.MobileNum = dr[3].ToString();
-                    item.Email = dr[4].ToString();
-                    item.Gender = dr[5].ToString();
-                    item.Status = dr[6].ToString();
-                    item.CreateTime = dr[7].ToString();
-                    item.UpdateTime = dr[8].ToString();
-                    item.wechatId = dr[9].ToString();
+                    item.UserId = dr["UserId"].ToString();
+                    item.Name = dr["Name"].ToString();
+                    item.Password = dr["Password"].ToString();
+                    item.MobileNum = dr["MobileNum"].ToString();
+                    item.Email = dr["Email"].ToString();
+                    item.Gender = dr["Gender"].ToString();
+                    item.Status = dr["Status"].ToString();
+                    item.CreateTime = dr["CreateTime"].ToString();
+                    item.UpdateTime = dr["UpdateTime"].ToString();
+                    item.wechatId = dr["wechatId"].ToString();
                     result.Add(item);
                 }
                 return result;
             }
             catch (Exception ex) {
+                WriteLog.WriteError(ex.ToString());
                 return new List<UserInfoModel>();
             }
         }
+
         /// <summary>
-        /// 获取全部用户信息
+        /// 通过用户姓名获取用户信息
         /// </summary>
         /// <returns></returns>
         public UserInfoModel getUserInfoDataByUserName(string userName)
@@ -72,16 +75,16 @@ namespace SqlServer
                 if (dr.Read())
                 {
                     UserInfoModel item = new UserInfoModel();
-                    item.UserId = dr[0].ToString();
-                    item.Name = dr[1].ToString();
-                    item.Password = dr[2].ToString();
-                    item.MobileNum = dr[3].ToString();
-                    item.Email = dr[4].ToString();
-                    item.Gender = dr[5].ToString();
-                    item.Status = dr[6].ToString();
-                    item.CreateTime = dr[7].ToString();
-                    item.UpdateTime = dr[8].ToString();
-                    item.wechatId = dr[9].ToString();
+                    item.UserId = dr["UserId"].ToString();
+                    item.Name = dr["Name"].ToString();
+                    item.Password = dr["Password"].ToString();
+                    item.MobileNum = dr["MobileNum"].ToString();
+                    item.Email = dr["Email"].ToString();
+                    item.Gender = dr["Gender"].ToString();
+                    item.Status = dr["Status"].ToString();
+                    item.CreateTime = dr["CreateTime"].ToString();
+                    item.UpdateTime = dr["UpdateTime"].ToString();
+                    item.wechatId = dr["wechatId"].ToString();
                     result =(item);
                 }
                 else {
@@ -91,6 +94,7 @@ namespace SqlServer
             }
             catch (Exception ex)
             {
+                WriteLog.WriteError(ex.ToString());
                 return new UserInfoModel();
             }
 

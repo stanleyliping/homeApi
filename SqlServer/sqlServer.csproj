@@ -41,10 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpressInfoSql.cs" />
+    <Compile Include="FunctionListSql.cs" />
+    <Compile Include="UserFunctionRelationSql.cs" />
     <Compile Include="UserInfoSql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseTools\BaseTools.csproj">
+      <Project>{352054f2-62c0-420d-a417-0bcb6f5ef448}</Project>
+      <Name>BaseTools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{25699903-1317-4151-b427-7a04981eb697}</Project>
       <Name>Model</Name>
