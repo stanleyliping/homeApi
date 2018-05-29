@@ -18,3 +18,5 @@ D:\web_deployment\home\homeApi\service\obj\Debug\service.dll
 D:\web_deployment\home\homeApi\service\obj\Debug\service.pdb
 D:\web_deployment\home\homeApi\service\bin\Debug\BaseTools.dll
 D:\web_deployment\home\homeApi\service\bin\Debug\BaseTools.pdb
+F:\myGit\C#$javascriptProjects\homeApi\service\bin\Debug\BaseTools.dll
+F:\myGit\C#$javascriptProjects\homeApi\service\bin\Debug\BaseTools.pdb

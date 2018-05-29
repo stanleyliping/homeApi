@@ -40,6 +40,7 @@ namespace SqlServer
                     item.PhoneNum = dr["PhoneNum"].ToString();
                     item.Address = dr["Address"].ToString();
                     item.Status = dr["Status"].ToString();
+                    item.ImgPath = dr["ImgPath"].ToString();
                     result.Add(item);
                 }
                 dr.Close();
@@ -72,7 +73,7 @@ namespace SqlServer
                 cmd.Parameters.Add("@PhoneNum", SqlDbType.VarChar).Value = expressInfo.PhoneNum;
                 cmd.Parameters.Add("@Address", SqlDbType.VarChar).Value = expressInfo.Address;
                 cmd.Parameters.Add("@Status", SqlDbType.Int).Value = expressInfo.Status;
-
+                cmd.Parameters.Add("@ImgPath", SqlDbType.VarChar).Value = expressInfo.ImgPath;
                 cmd.CommandText = sql;
                 SqlDataReader dr = cmd.ExecuteReader();
                 dr.Close();

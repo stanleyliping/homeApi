@@ -32,5 +32,9 @@ namespace Model
         /// 状态
         /// </summary>
         public string Status { set; get; }
+        /// <summary>
+        /// 截图路径
+        /// </summary>
+        public string ImgPath { set; get; }
     }
 }

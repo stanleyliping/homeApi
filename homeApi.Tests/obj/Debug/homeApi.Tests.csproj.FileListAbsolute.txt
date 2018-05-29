@@ -88,3 +88,5 @@ D:\web_deployment\home\homeApi\homeApi.Tests\obj\Debug\homeApi.Tests.dll
 D:\web_deployment\home\homeApi\homeApi.Tests\obj\Debug\homeApi.Tests.pdb
 D:\web_deployment\home\homeApi\homeApi.Tests\bin\Debug\BaseTools.dll
 D:\web_deployment\home\homeApi\homeApi.Tests\bin\Debug\BaseTools.pdb
+F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\BaseTools.dll
+F:\myGit\C#$javascriptProjects\homeApi\homeApi.Tests\bin\Debug\BaseTools.pdb

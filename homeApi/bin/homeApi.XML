@@ -69,9 +69,9 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:homeApi.Controllers.ExpressInfoController.insertExpressInfo(Model.ExpressInfoModel)">
+        <member name="M:homeApi.Controllers.ExpressInfoController.insertExpressInfo">
             <summary>
-            插入一条快递信息
+            通过表单插入一条快递信息
             </summary>
             <returns></returns>
         </member>
@@ -83,6 +83,17 @@
         <member name="M:homeApi.Controllers.FunctionListController.getAllFunctions">
             <summary>
             获取全部功能信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:homeApi.Controllers.uploadController">
+            <summary>
+            上传文件并保存接口（直接调用无效）
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.uploadController.uploaddemo">
+            <summary>
+            上传文件并保存接口（直接调用无效）
             </summary>
             <returns></returns>
         </member>

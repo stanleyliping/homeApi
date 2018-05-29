@@ -136,6 +136,7 @@
     <Compile Include="Controllers\emailController.cs" />
     <Compile Include="Controllers\ExpressInfoController.cs" />
     <Compile Include="Controllers\FunctionListController.cs" />
+    <Compile Include="Controllers\uploadController.cs" />
     <Compile Include="Controllers\userInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -160,6 +161,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseTools\BaseTools.csproj">
+      <Project>{352054f2-62c0-420d-a417-0bcb6f5ef448}</Project>
+      <Name>BaseTools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{25699903-1317-4151-b427-7a04981eb697}</Project>
       <Name>Model</Name>

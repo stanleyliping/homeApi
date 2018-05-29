@@ -14,3 +14,5 @@ D:\web_deployment\home\homeApi\SqlServer\obj\Debug\SqlServer.dll
 D:\web_deployment\home\homeApi\SqlServer\obj\Debug\SqlServer.pdb
 D:\web_deployment\home\homeApi\SqlServer\bin\Debug\BaseTools.dll
 D:\web_deployment\home\homeApi\SqlServer\bin\Debug\BaseTools.pdb
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\bin\Debug\BaseTools.dll
+F:\myGit\C#$javascriptProjects\homeApi\SqlServer\bin\Debug\BaseTools.pdb
