@@ -24,7 +24,7 @@ namespace homeApi.Controllers.Dao
         [HttpGet]
         [Route("homeApi/userDao/loginRequest/{UserName}/{Password}")]
         [ActionName("loginRequest")]
-        public int loginRequest(string UserName,string Password)
+        public string loginRequest(string UserName,string Password)
         {
             UserDaoService udService = new UserDaoService();
             return udService.loginRequest(UserName , Password);

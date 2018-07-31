@@ -2,7 +2,9 @@ F:\myGit\C#$javascriptProjects\homeApi\Model\bin\Debug\Model.dll
 F:\myGit\C#$javascriptProjects\homeApi\Model\bin\Debug\Model.pdb
 F:\myGit\C#$javascriptProjects\homeApi\Model\obj\Debug\Model.dll
 F:\myGit\C#$javascriptProjects\homeApi\Model\obj\Debug\Model.pdb
+D:\web_deployment\home\homeApi\Model\bin\Debug\Model.XML
 D:\web_deployment\home\homeApi\Model\bin\Debug\Model.dll
 D:\web_deployment\home\homeApi\Model\bin\Debug\Model.pdb
 D:\web_deployment\home\homeApi\Model\obj\Debug\Model.dll
 D:\web_deployment\home\homeApi\Model\obj\Debug\Model.pdb
+D:\web_deployment\home\homeApi\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

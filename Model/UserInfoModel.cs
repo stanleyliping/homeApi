@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class UserInfoModel
     {
         /// <summary>
@@ -39,7 +42,7 @@ namespace Model
         /// <summary>
         /// 在微信企业号中的用户id
         /// </summary>
-        public string wechatId { set; get; }
+        public string WechatId { set; get; }
         /// <summary>
         /// 创建时间
         /// </summary>
@@ -48,5 +51,9 @@ namespace Model
         /// 最后更新时间
         /// </summary>
         public string UpdateTime { set; get; }
+        /// <summary>
+        /// 验证guid
+        /// </summary>
+        public string IdentyGuid { set; get; }
     }
 }

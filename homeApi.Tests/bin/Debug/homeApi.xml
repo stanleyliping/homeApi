@@ -49,13 +49,14 @@
             
             </summary>
         </member>
-        <member name="M:homeApi.Controllers.emailController.sendMailToUser(System.String,System.String,System.String)">
+        <member name="M:homeApi.Controllers.emailController.sendMailToUser(System.String,System.String,System.String,System.String)">
             <summary>
             发送邮件
             </summary>
             <param name="emailAddress">收件人地址</param>
             <param name="title">标题</param>
             <param name="text">正文</param>
+            <param name="Imagefilename">图片路径</param>
             <returns></returns>
         </member>
         <member name="T:homeApi.Controllers.ExpressInfoController">
@@ -91,7 +92,7 @@
             上传文件并保存接口（直接调用无效）
             </summary>
         </member>
-        <member name="M:homeApi.Controllers.uploadController.uploaddemo">
+        <member name="M:homeApi.Controllers.uploadController.uploadImgAndORC">
             <summary>
             上传文件并保存接口（直接调用无效）
             </summary>

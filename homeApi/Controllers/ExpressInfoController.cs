@@ -12,6 +12,7 @@ using System.Web;
 using System.Web.Hosting;
 using System.IO;
 using Newtonsoft.Json;
+using Swashbuckle.Swagger.Annotations;
 
 namespace homeApi.Controllers
 {
@@ -27,6 +28,7 @@ namespace homeApi.Controllers
         [HttpGet]
         [Route("homeApi/expressInfo/getAllExpressInfo")]
         [ActionName("getAllExpressInfo")]
+        [SwaggerResponse(HttpStatusCode.OK, Type = typeof(List<ExpressInfoModel>))]
         public IEnumerable<ExpressInfoModel> getAllExpressInfo()
         {
             ExpressInfoService service = new ExpressInfoService();
@@ -42,28 +44,28 @@ namespace homeApi.Controllers
         [HttpPost]
         [Route("homeApi/expressInfo/insertExpressInfoWithImg")]
         [ActionName("insertExpressInfoWithImg")]
-        public async Task<ExpressInfoModel>  insertExpressInfo()
+        public async Task<sendExpressInfoEmailModel>  insertExpressInfo()
         {
             try {
                 HttpContextBase context = (HttpContextBase)Request.Properties["MS_HttpContext"];//获取传统context  
                 HttpRequestBase request = context.Request;//定义传统request对象,request["name"]
                 var expressInfoJSON = "";
-                ExpressInfoModel result = new ExpressInfoModel();
+                sendExpressInfoEmailModel result = new sendExpressInfoEmailModel();
                 try {
-                    expressInfoJSON = request["expressInfo"];
-                    result=JsonConvert.DeserializeObject<ExpressInfoModel>(expressInfoJSON);
+                    expressInfoJSON = request["sendExpressInfo"];
+                    result=JsonConvert.DeserializeObject<sendExpressInfoEmailModel>(expressInfoJSON);
                 }
                 catch (Exception ex)
                 {
                     WriteLog.WriteError(ex.ToString());
-                    return new ExpressInfoModel();
+                    return new sendExpressInfoEmailModel();
                 }
 
                 if (!Request.Content.IsMimeMultipartContent())
                 {
                     throw new HttpResponseException(HttpStatusCode.UnsupportedMediaType);//415
                 }
-                string uploadFolderPath = HostingEnvironment.MapPath("~/Upload");
+                string uploadFolderPath = HostingEnvironment.MapPath("~/Upload");//获取目录下一个路径
 
                 //如果路径不存在，创建路径  
                 if (!Directory.Exists(uploadFolderPath))
@@ -87,12 +89,25 @@ namespace homeApi.Controllers
                 {
                     WriteLog.WriteError(ex.ToString());
                 }
-                result.ImgPath = files;
-                return result;
+                result.expressInfo.ImgPath = files;
+                ExpressInfoService service = new ExpressInfoService();
+
+                try {
+                    service.insertExpressInfo(result.expressInfo);
+                    //发送快递提醒邮件
+                    emailService emailservice = new emailService();
+                    var imgPath = HostingEnvironment.MapPath("~/Upload/" + result.expressInfo.ImgPath);
+                    emailservice.sendMailToUser(result.receiverEmailList[0], "你有一个快递提醒", "信息如下：", imgPath);
+                    return result;
+                }
+                catch (Exception ex) {
+                    WriteLog.WriteError(ex.ToString());
+                    return new sendExpressInfoEmailModel();
+                }
             }
             catch (Exception ex) {
                 WriteLog.WriteError(ex.ToString());
-                return new ExpressInfoModel();
+                return new sendExpressInfoEmailModel();
             }
         }
     }

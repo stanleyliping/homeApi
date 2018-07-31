@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ExpressOperateLogModel
     {
         /// <summary>

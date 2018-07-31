@@ -43,7 +43,8 @@ namespace SqlServer
                     item.Status = dr["Status"].ToString();
                     item.CreateTime = dr["CreateTime"].ToString();
                     item.UpdateTime = dr["UpdateTime"].ToString();
-                    item.wechatId = dr["wechatId"].ToString();
+                    item.WechatId = dr["wechatId"].ToString();
+                    item.IdentyGuid= dr["IdentyGuid"].ToString();
                     result.Add(item);
                 }
                 return result;
@@ -84,7 +85,8 @@ namespace SqlServer
                     item.Status = dr["Status"].ToString();
                     item.CreateTime = dr["CreateTime"].ToString();
                     item.UpdateTime = dr["UpdateTime"].ToString();
-                    item.wechatId = dr["wechatId"].ToString();
+                    item.WechatId = dr["wechatId"].ToString();
+                    item.IdentyGuid = dr["IdentyGuid"].ToString();
                     result =(item);
                 }
                 else {

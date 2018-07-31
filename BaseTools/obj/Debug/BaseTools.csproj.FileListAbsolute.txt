@@ -1,8 +1,9 @@
-D:\web_deployment\home\homeApi\BaseTools\bin\Debug\BaseTools.dll
-D:\web_deployment\home\homeApi\BaseTools\bin\Debug\BaseTools.pdb
-D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.dll
-D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.pdb
 F:\myGit\C#$javascriptProjects\homeApi\BaseTools\bin\Debug\BaseTools.dll
 F:\myGit\C#$javascriptProjects\homeApi\BaseTools\bin\Debug\BaseTools.pdb
 F:\myGit\C#$javascriptProjects\homeApi\BaseTools\obj\Debug\BaseTools.dll
 F:\myGit\C#$javascriptProjects\homeApi\BaseTools\obj\Debug\BaseTools.pdb
+D:\web_deployment\home\homeApi\BaseTools\bin\Debug\BaseTools.dll
+D:\web_deployment\home\homeApi\BaseTools\bin\Debug\BaseTools.pdb
+D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.dll
+D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.pdb
+D:\web_deployment\home\homeApi\BaseTools\obj\Debug\BaseTools.csprojResolveAssemblyReference.cache

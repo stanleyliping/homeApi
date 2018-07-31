@@ -269,5 +269,10 @@ namespace homeApi
             var re = System.String.Format(@"{0}\bin\homeApi.XML", System.AppDomain.CurrentDomain.BaseDirectory);
             return re;
         }
+        protected static string GetXmlCommentsPath(string pathStr)
+        {
+            var re = System.String.Format(@"{0}\bin\homeApi.XML", System.AppDomain.CurrentDomain.BaseDirectory);
+            return re;
+        }
     }
 }

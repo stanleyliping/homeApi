@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Http;
+using service;
+using service.Functions;
+using BaseTools;
 
 namespace homeApi.Controllers
 {
@@ -22,8 +25,9 @@ namespace homeApi.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        [Route("homeApi/upload/upload")]
-        public async Task<string> uploaddemo()
+        [Route("homeApi/upload/uploadImgAndORC")]
+        [ActionName("uploadImgAndORC")]
+        public async Task<object> uploadImgAndORC()
         {
             HttpContextBase context = (HttpContextBase)Request.Properties["MS_HttpContext"];//获取传统context  
             HttpRequestBase request = context.Request;//定义传统request对象,request["name"]
@@ -50,12 +54,15 @@ namespace homeApi.Controllers
                 {//接收文件  
                     files.Add(Path.GetFileName(file.LocalFileName));
                 }
+                ORCService service = new ORCService();
+                var result=service.ORCImg(HostingEnvironment.MapPath("~/Upload")+"/"+string.Join(",", files));
+                return result;
             }
-            catch
+            catch(Exception ex)
             {
-                throw;
+                WriteLog.WriteError(ex.ToString());
+                return "";
             }
-            return string.Join(",", files);
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Hosting;
 
 namespace BaseTools
 {
@@ -19,7 +20,8 @@ namespace BaseTools
             try
             {
                 //DateTime dt = new DateTime();
-                string directPath = ConfigurationManager.AppSettings["LogFilePath"].ToString().Trim();    //获得文件夹路径
+                //string directPath = ConfigurationManager.AppSettings["LogFilePath"].ToString().Trim();    //获得文件夹路径
+                string directPath = HostingEnvironment.MapPath("~/Log");
                 if (!Directory.Exists(directPath))   //判断文件夹是否存在，如果不存在则创建
                 {
                     Directory.CreateDirectory(directPath);

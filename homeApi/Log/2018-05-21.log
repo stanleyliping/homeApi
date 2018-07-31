@@ -1,6 +1,0 @@
-***********************************************************************
-15:26:40
-输出信息：错误信息
-异常信息：
-System.NullReferenceException: 未将对象引用设置到对象的实例。
-   在 service.DAO.UserDaoService.login(String userName, String password) 位置 D:\web_deployment\home\homeApi\service\DAO\UserDaoService.cs:行号 28

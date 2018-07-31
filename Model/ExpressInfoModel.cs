@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ExpressInfoModel
     {
         /// <summary>
@@ -31,10 +34,28 @@ namespace Model
         /// <summary>
         /// 状态
         /// </summary>
-        public string Status { set; get; }
+        public int Status { set; get; }
         /// <summary>
         /// 截图路径
         /// </summary>
         public string ImgPath { set; get; }
+        /// <summary>
+        /// 取件码
+        /// </summary>
+        public string ExpressCode { set; get; }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public class sendExpressInfoEmailModel {
+        /// <summary>
+        /// 
+        /// </summary>
+       public List<string> receiverEmailList { set; get; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public ExpressInfoModel expressInfo { set; get; }
     }
 }

@@ -39,8 +39,9 @@ namespace SqlServer
                     item.Company = dr["Company"].ToString();
                     item.PhoneNum = dr["PhoneNum"].ToString();
                     item.Address = dr["Address"].ToString();
-                    item.Status = dr["Status"].ToString();
+                    item.Status = int.Parse(dr["Status"].ToString());
                     item.ImgPath = dr["ImgPath"].ToString();
+                    item.ExpressCode=dr["ExpressCode"].ToString();
                     result.Add(item);
                 }
                 dr.Close();
@@ -67,13 +68,14 @@ namespace SqlServer
             try
             {
                 cmd.Connection = conn;//设置命令对象连接属性
-                string sql = "insert into Express_Info  (ExpressId,Company,PhoneNum,Address,Status) values(@ExpressId,@Company,@PhoneNum,@Address,@Status)";
+                string sql = "insert into Express_Info  (ExpressId,Company,PhoneNum,Address,Status,ImgPath,ExpressCode) values(@ExpressId,@Company,@PhoneNum,@Address,@Status,@ImgPath,@ExpressCode)";
                 cmd.Parameters.Add("@ExpressId", SqlDbType.VarChar).Value = expressInfo.ExpressId;
                 cmd.Parameters.Add("@Company", SqlDbType.VarChar).Value = expressInfo.Company;
                 cmd.Parameters.Add("@PhoneNum", SqlDbType.VarChar).Value = expressInfo.PhoneNum;
                 cmd.Parameters.Add("@Address", SqlDbType.VarChar).Value = expressInfo.Address;
                 cmd.Parameters.Add("@Status", SqlDbType.Int).Value = expressInfo.Status;
                 cmd.Parameters.Add("@ImgPath", SqlDbType.VarChar).Value = expressInfo.ImgPath;
+                cmd.Parameters.Add("@ExpressCode", SqlDbType.VarChar).Value = expressInfo.ExpressCode;
                 cmd.CommandText = sql;
                 SqlDataReader dr = cmd.ExecuteReader();
                 dr.Close();
@@ -90,61 +92,3 @@ namespace SqlServer
         }
     }
 }
-
-
-//#region 插入操作
-///// <summary>
-///// 插入
-///// </summary>
-///// <param name="order"></param>
-///// <returns></returns>
-//public LamsWorkOrder Insert(LamsWorkOrder order)
-//{
-//    try
-//    {
-//        string sqlCmd = @"INSERT INTO [WORK_ORDER_LIST](
-//                                   [OBJECT_ID]
-//                                  ,[SEND_TYPE]
-//                                  ,[BUSSINESS_TYPE]
-//                                  ,[SEND_DETAIL]
-//                                  ,[CREATE_TIME]
-//                                  ,[CREATE_USER]
-//                                  ,[ORDER_REMARK]
-//                                  ,[TARGET_GROUPS]
-//                                  ,[TARGET_USERS]
-//                                  ,[ORDER_STATE] ) VALUES (
-//                                   @OBJECT_ID
-//                                  ,@SEND_TYPE
-//                                  ,@BUSSINESS_TYPE
-//                                  ,@SEND_DETAIL
-//                                  ,@CREATE_TIME
-//                                  ,@CREATE_USER
-//                                  ,@ORDER_REMARK
-//                                  ,@TARGET_GROUPS
-//                                  ,@TARGET_USERS
-//                                  ,@ORDER_STATE)
-//                                   SELECT @@IDENTITY ";
-//        using (var cmd = Database.GetSqlStringCommand(sqlCmd))
-//        {
-//            Database.AddInParameter(cmd, "@OBJECT_ID", DbType.Int32, order.ObjectId);
-//            Database.AddInParameter(cmd, "@SEND_TYPE", DbType.Int32, order.SendType);
-//            Database.AddInParameter(cmd, "@BUSSINESS_TYPE", DbType.Int32, order.BusinessType);
-//            Database.AddInParameter(cmd, "@SEND_DETAIL", DbType.String, order.SendDetail);
-//            Database.AddInParameter(cmd, "@CREATE_TIME", DbType.DateTime, order.CreateTime);
-//            Database.AddInParameter(cmd, "@CREATE_USER", DbType.Int32, order.CreateUser);
-//            Database.AddInParameter(cmd, "@ORDER_REMARK", DbType.String, order.OrderRemark);
-//            Database.AddInParameter(cmd, "@TARGET_GROUPS", DbType.String, order.TargetGroups);
-//            Database.AddInParameter(cmd, "@TARGET_USERS", DbType.String, order.TargetUsers);
-//            Database.AddInParameter(cmd, "@ORDER_STATE", DbType.Int32, order.OrderState);
-//            order.OrderId = ExecuteScalar<int>(cmd);
-//            return order;
-//        }
-//    }
-//    catch (Exception ex)
-//    {
-
-//        LogManager.Get().Throw(ex);
-//        return null;
-//    }
-//}
-//#endregion
