@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>homeApi</name>
+    </assembly>
+    <members>
+        <member name="T:homeApi.SwaggerConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.SwaggerConfig.Register">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.SwaggerConfig.GetXmlCommentsPath">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:homeApi.WebApiConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:homeApi.Controllers.Dao.UserDaoController">
+            <summary>
+            用户操作控制器
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.Dao.UserDaoController.loginRequest(System.String,System.String)">
+            <summary>
+            登录判断
+            </summary>
+            <param name="UserName">用户名</param>
+            <param name="Password">密码</param>
+            <returns>1--成功，0--系统错误，-1--查无此用户，-2--用户没有分配任何功能权限，-3--密码错误，-4--用户状态为已删除</returns>
+        </member>
+        <member name="T:homeApi.Controllers.emailController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.emailController.sendMailToUser(System.String,System.String,System.String)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="emailAddress">收件人地址</param>
+            <param name="title">标题</param>
+            <param name="text">正文</param>
+            <returns></returns>
+        </member>
+        <member name="T:homeApi.Controllers.ExpressInfoController">
+            <summary>
+            快递信息控制器
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.ExpressInfoController.getAllExpressInfo">
+            <summary>
+            获取全部快递信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:homeApi.Controllers.ExpressInfoController.insertExpressInfo">
+            <summary>
+            通过表单插入一条快递信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:homeApi.Controllers.FunctionListController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.FunctionListController.getAllFunctions">
+            <summary>
+            获取全部功能信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:homeApi.Controllers.uploadController">
+            <summary>
+            上传文件并保存接口（直接调用无效）
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.uploadController.uploaddemo">
+            <summary>
+            上传文件并保存接口（直接调用无效）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:homeApi.Controllers.userInfoController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.Controllers.userInfoController.getAllUserInfo">
+            <summary>
+            获取全部用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:homeApi.Controllers.userInfoController.getUserInfoByUserName(System.String)">
+            <summary>
+            通过用户姓名获取用户信息
+            </summary>
+            <param name="userName">用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:homeApi.Controllers.userInfoController.Post(System.String)">
+            <summary>
+            post方法
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:homeApi.Controllers.userInfoController.Put(System.Int32,System.String)">
+            <summary>
+            Put方法
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:homeApi.Controllers.userInfoController.Delete(System.Int32)">
+            <summary>
+            delete方法
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:homeApi.WebApiApplication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:homeApi.WebApiApplication.Application_Start">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
