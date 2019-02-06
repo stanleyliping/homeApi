@@ -17,3 +17,13 @@ D:\web_deployment\home\homeApi\SqlServer\bin\Debug\Model.xml
 D:\web_deployment\home\homeApi\SqlServer\obj\Debug\sqlServer.csprojResolveAssemblyReference.cache
 D:\web_deployment\home\homeApi\SqlServer\obj\Debug\SqlServer.dll
 D:\web_deployment\home\homeApi\SqlServer\obj\Debug\SqlServer.pdb
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\SqlServer.dll
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\SqlServer.pdb
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\BaseTools.dll
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\Model.dll
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\BaseTools.pdb
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\Model.pdb
+E:\Codes\vs\homeApi\SqlServer\bin\Debug\Model.xml
+E:\Codes\vs\homeApi\SqlServer\obj\Debug\sqlServer.csprojResolveAssemblyReference.cache
+E:\Codes\vs\homeApi\SqlServer\obj\Debug\SqlServer.dll
+E:\Codes\vs\homeApi\SqlServer\obj\Debug\SqlServer.pdb

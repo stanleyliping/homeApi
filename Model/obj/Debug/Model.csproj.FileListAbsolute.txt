@@ -8,3 +8,9 @@ D:\web_deployment\home\homeApi\Model\bin\Debug\Model.pdb
 D:\web_deployment\home\homeApi\Model\obj\Debug\Model.dll
 D:\web_deployment\home\homeApi\Model\obj\Debug\Model.pdb
 D:\web_deployment\home\homeApi\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Codes\vs\homeApi\Model\bin\Debug\Model.XML
+E:\Codes\vs\homeApi\Model\bin\Debug\Model.dll
+E:\Codes\vs\homeApi\Model\bin\Debug\Model.pdb
+E:\Codes\vs\homeApi\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Codes\vs\homeApi\Model\obj\Debug\Model.dll
+E:\Codes\vs\homeApi\Model\obj\Debug\Model.pdb
