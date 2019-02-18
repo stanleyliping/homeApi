@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Model</name>
+    </assembly>
+    <members>
+        <member name="T:Model.ExpressInfoModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.RowId">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.ExpressId">
+            <summary>
+            快递编号
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.Company">
+            <summary>
+            快递公司
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.PhoneNum">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.Address">
+            <summary>
+            取快递地址
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.ImgPath">
+            <summary>
+            截图路径
+            </summary>
+        </member>
+        <member name="P:Model.ExpressInfoModel.ExpressCode">
+            <summary>
+            取件码
+            </summary>
+        </member>
+        <member name="T:Model.sendExpressInfoEmailModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.sendExpressInfoEmailModel.receiverEmailList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.sendExpressInfoEmailModel.expressInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Model.ExpressOperateLogModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.ExpressOperateLogModel.OperateId">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Model.ExpressOperateLogModel.OperateType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:Model.ExpressOperateLogModel.OperateTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:Model.ExpressOperateLogModel.OperateUserId">
+            <summary>
+            操作人
+            </summary>
+        </member>
+        <member name="P:Model.ExpressOperateLogModel.ExpressRowId">
+            <summary>
+            快递主键
+            </summary>
+        </member>
+        <member name="T:Model.FunctionListModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.FunctionListModel.FunctionId">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Model.FunctionListModel.FunctionName">
+            <summary>
+            功能名
+            </summary>
+        </member>
+        <member name="P:Model.FunctionListModel.FunctionCode">
+            <summary>
+            功能编码
+            </summary>
+        </member>
+        <member name="T:Model.UserFunctionRelationModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.UserFunctionRelationModel.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Model.UserFunctionRelationModel.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Model.UserFunctionRelationModel.FunctionId">
+            <summary>
+            功能Id
+            </summary>
+        </member>
+        <member name="T:Model.UserInfoModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.UserId">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.MobileNum">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.Email">
+            <summary>
+            email地址
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.Gender">
+            <summary>
+            性别 1-男，2-女
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.Status">
+            <summary>
+            状态 1-激活，2-禁用
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.WechatId">
+            <summary>
+            在微信企业号中的用户id
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.UpdateTime">
+            <summary>
+            最后更新时间
+            </summary>
+        </member>
+        <member name="P:Model.UserInfoModel.IdentyGuid">
+            <summary>
+            验证guid
+            </summary>
+        </member>
+    </members>
+</doc>

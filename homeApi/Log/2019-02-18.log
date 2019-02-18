@@ -1,0 +1,18 @@
+***********************************************************************
+09:44:44
+输出信息：错误信息
+异常信息：
+System.IndexOutOfRangeException: IdentyGuid
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 SqlServer.UserInfoSql.getAllUserInfoData() 位置 F:\myGit\C#javascriptProjects\homeApi\SqlServer\UserInfoSql.cs:行号 47
+***********************************************************************
+09:47:20
+输出信息：错误信息
+异常信息：
+System.IndexOutOfRangeException: IdentyGuid
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 SqlServer.UserInfoSql.getAllUserInfoData() 位置 F:\myGit\C#javascriptProjects\homeApi\SqlServer\UserInfoSql.cs:行号 47
